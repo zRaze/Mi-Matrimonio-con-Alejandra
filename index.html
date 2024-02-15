@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Propuesta De Matrimonio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: pink;
+        }
+    </style>
+    <script>
+        function accionParaCuandoEllaDigaQueSi(){
+            alert('Te amo mucho Ale, prometo estar contigo en todas al igual que tu estaras para mi en todas, eres lo mejor que me a podido pasar. Te amo mi niña hermosa ❤');
+        }
+
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+            
+
+        }
+    </script>
+</head>
+<body>
+    <h3>Es difícil expresar con palabras lo que siento por ti Alejandra, pero quiero que sepas que te amo profundamente. Desde el momento en que te conocí, has llenado mi vida de alegría, amor y compañerismo. Eres una persona increíble, llena de bondad, inteligencia y belleza, y cada día a tu lado es un regalo que valoro infinitamente.
+
+Sé que somos jóvenes y que el camino por delante puede parecer incierto, pero lo que siento por ti es real y profundo. Quiero compartir mi vida contigo, caminar juntos en esta aventura que es el amor y enfrentar juntos cualquier desafío que se nos presente.
+
+Por eso, me gustaría preguntarte si estarías dispuesta a casarte conmigo. Sé que podemos ser jóvenes, pero también sé que nuestro amor es fuerte y verdadero. Quiero construir un futuro juntos, lleno de amor, respeto y felicidad.</h3>
+    <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Si" />
+    <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="No" />
+    <img src="flushed.png" width="200">
+</body>
+</html>
